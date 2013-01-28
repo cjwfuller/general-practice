@@ -1,4 +1,4 @@
 practicing-php
 ==============
 
-Miscellaneous PHP programs
+This repository is just for solving PHP puzzles and trying out ideas.
