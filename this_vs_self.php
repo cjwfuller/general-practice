@@ -1,5 +1,8 @@
 #!/usr/bin/php
 <?php
+/**
+ * Program to demonstrate difference between this and self keywords
+ */
 class Animal {
     public function which_class() {
         echo "Animal\n";

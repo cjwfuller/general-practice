@@ -1,5 +1,9 @@
 #!/usr/bin/php
 <?php
+/**
+ * Program to demonstrate the difference between static and self
+ * keywords
+ */
 class Animal {
     public static function which_class() {
         echo "Animal\n";
