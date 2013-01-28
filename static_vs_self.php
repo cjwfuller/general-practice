@@ -9,6 +9,7 @@ class Animal {
         // Outputs Animal when say_class method called from Dog object
         self::which_class();         
         // Outputs Dog when say_class method called from Dog object
+        // No 'bypass' of polymorphic behaviour
         static::which_class(); 
     }
 }
