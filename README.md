@@ -1,4 +1,4 @@
-practicing-php
-==============
+general-practice
+================
 
-This repository is just for solving PHP puzzles and trying out ideas.
+Playing with languages, experimenting, test-driving ideas etc
