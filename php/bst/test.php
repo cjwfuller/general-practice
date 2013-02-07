@@ -10,11 +10,20 @@ $one = new Node( 1 );
 $seven = new Node( 7 );
 $nine = new Node( 9 );
 
-$bst->insert( $five );
-$bst->insert( $four );
-$bst->insert( $one );
-$bst->insert( $seven );
-$bst->insert( $nine );
+// Iteratively insert some Nodes
+//$bst->insert_itr( $five );
+//$bst->insert_itr( $four );
+//$bst->insert_itr( $one );
+//$bst->insert_itr( $seven );
+//$bst->insert_itr( $nine );
 
+// Recursively insert some Nodes
+$bst->insert_recur( $five );
+$bst->insert_recur( $four );
+$bst->insert_recur( $one );
+$bst->insert_recur( $seven );
+$bst->insert_recur( $nine );
+
+// Traverse tree inorder
 $bst->inorder();
 ?>

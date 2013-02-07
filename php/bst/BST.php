@@ -29,7 +29,7 @@ class BST {
      * @param Node $node
      * @param Integer $data
      */
-    public function insert( $data ) {
+    public function insert_iter( $data ) {
         if( NULL === $this->root ) {
             $this->root = new Node( $data );
         } else {
@@ -60,6 +60,33 @@ class BST {
                 }
             }
         } 
+    }
+
+    /**
+     * Recursively insert data into the right place in the tree
+     * @param Integer $data
+     */
+    public function insert_recur( $data ) {
+        $this->root = $this->insert_recur_helper( $this->root, $data ); 
+    }
+
+    /**
+     * Recursive insert helper function
+     * @param Node $node
+     * @param Integer $data
+     * @return Node $node
+     */
+    private function insert_recur_helper( $node, $data ) {
+        if( NULL === $node ) {
+            $node = new Node( $data );
+        } else {
+            if( $data <= $node->data ) {
+                $node->left = $this->insert_recur_helper( $node->left, $data );
+            } else {
+                $node->right = $this->insert_recur_helper( $node->right, $data );
+            }
+        }
+        return $node;
     }
 
     public function search( $node ) {
