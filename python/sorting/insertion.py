@@ -4,11 +4,11 @@ import random
 
 def insertion_sort( items, list_size ):
     """ Insertion sort
-        
-        An implementation of merge sort using The 'Algorithm Design Manual' 
+
+        An implementation of merge sort using The 'Algorithm Design Manual'
         book by Steven S. Skiena (author's implementation is in a pseudo C
-        language) 
-        
+        language)
+
         Args:
            items: A list of inetegers to be sorted
            list_size: Number of elements in list to be sorted
@@ -20,15 +20,15 @@ def insertion_sort( items, list_size ):
         j = i
         while j > 0 and items[j] < items[j - 1]:
             # values need swapping
-            # use temporary variable to swap the values 
+            # use temporary variable to swap the values
             tmp = items[j]
             items[j] = items[j - 1]
-            items[j - 1] = tmp 
+            items[j - 1] = tmp
             j = j - 1
     return items
 
 # Generate a list of random numbers
-#list_size = 10 
+#list_size = 10
 #random_items = [int( 100 * random.random() ) for i in xrange( list_size )]
 
 #print "Random, probably unsorted list:"
