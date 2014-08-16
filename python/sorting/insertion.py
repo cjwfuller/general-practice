@@ -1,6 +1,6 @@
 import random
 
-def insertion_sort( items, list_size ):
+def insertion_sort(items, list_size):
     """ Insertion sort
 
         An implementation of merge sort using The 'Algorithm Design Manual'
@@ -14,7 +14,7 @@ def insertion_sort( items, list_size ):
         Returns:
             A sorted list of integers between 0 and 9
     """
-    for i in range( len( items ) ):
+    for i in range(len(items)):
         j = i
         while j > 0 and items[j] < items[j - 1]:
             # values need swapping
