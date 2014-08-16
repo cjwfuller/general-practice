@@ -1,5 +1,3 @@
-#!/bin/python
-
 import random
 
 def insertion_sort( items, list_size ):
