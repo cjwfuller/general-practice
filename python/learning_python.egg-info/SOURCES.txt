@@ -1,5 +1,0 @@
-setup.py
-learning_python.egg-info/PKG-INFO
-learning_python.egg-info/SOURCES.txt
-learning_python.egg-info/dependency_links.txt
-learning_python.egg-info/top_level.txt
