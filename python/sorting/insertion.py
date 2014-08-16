@@ -24,14 +24,3 @@ def insertion_sort( items, list_size ):
             items[j - 1] = tmp
             j = j - 1
     return items
-
-# Generate a list of random numbers
-#list_size = 10
-#random_items = [int( 100 * random.random() ) for i in xrange( list_size )]
-
-#print "Random, probably unsorted list:"
-#print random_items
-
-#print "Sorted list:"
-#sorted_items = insertion_sort( random_items, list_size )
-#print sorted_items
