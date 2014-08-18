@@ -1,16 +1,10 @@
-class Node:
-    """Node (of a Binary Search Tree)"""
-
-    def __init__(self, data):
-        self.left = None
-        self.right = None
-        self.data = data
-
 class BST:
     """Binary Search Tree"""
 
-    def __init__(self):
-        self.root = None
+    def __init__(self, data, left=None, right=None):
+        self.left = None
+        self.right = None
+        self.data = data
 
     def inorder(self, node):
         """Perform in-order traversal of BST"""
