@@ -20,24 +20,3 @@ class BST:
             yield node.data
             for elem in self.inorder(node.right):
                 yield elem
-
-    # TODO don't like this - recursion would look clearer
-    def insert(self, data):
-        """Insert element into BST"""
-        if self.root == None:
-            self.root = Node(data)
-        else:
-            current = self.root
-            while True:
-                if(data < current.data):
-                    if(current.left):
-                        current = current.left
-                    else:
-                        current.left = Node(data)
-                elif(data > current.data):
-                    if(current.right):
-                        current = current.right
-                    else:
-                        current.right = Node(data)
-                else:
-                    break
