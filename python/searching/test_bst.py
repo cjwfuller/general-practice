@@ -3,23 +3,13 @@ import bst
 
 class TestBST(unittest.TestCase):
     def test_basic_insert(self):
-        tree = bst.BST()
-        tree.insert(3)
+        tree = bst.BST(5, bst.BST(4))
 
-    def test_inorder(self):
-        tree = bst.BST()
-        tree.insert(3)
-        tree.insert(4)
-        tree.insert(1)
-        tree.insert(0)
-
-        answers = [0, 1, 3, 4]
-
-        count = 0
-        results = tree.inorder(tree.root)
+    def test_single_element_inorder(self):
+        tree = bst.BST(4, None, None)
+        results = tree.inorder(tree)
         for r in results:
-            self.assertEquals(answers[count], r)
-            count = count + 1
+            self.assertEquals(4, r)
 
 if __name__ == '__main__':
     unittest.main()
