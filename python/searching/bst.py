@@ -13,3 +13,17 @@ class BST:
             self.inorder(node.left)
             print node.data
             self.inorder(node.right)
+
+    def preorder(self, node):
+        """Perform pre-order traversal of BST"""
+        if node is not None:
+            print node.data
+            self.inorder(node.left)
+            self.inorder(node.right)
+
+    def postorder(self, node):
+        """Perform post-order traversal of BST"""
+        if node is not None:
+            self.inorder(node.left)
+            self.inorder(node.right)
+            print node.data
